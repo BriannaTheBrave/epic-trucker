@@ -14,8 +14,8 @@ mission "Hauler - Low Risk - Cargo [0]"
 	repeat
 	description "Deliver <cargo> to <destination>. Payment is <payment>."
 	cargo random 10 4 .05
-	to offer
-		"cargo space" < 1200
+	#to offer
+		#"cargo space" < 1200
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 	destination
@@ -36,7 +36,7 @@ mission "Hauler - Low Risk - Cargo [1]"
 	cargo random 10 4 .05
 	to offer
 		random < 90
-		"cargo space" < 1200
+		#"cargo space" < 1200
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 	destination
@@ -57,7 +57,7 @@ mission "Hauler - Low Risk - Cargo [2]"
 	cargo random 10 4 .05
 	to offer
 		random < 80
-		"cargo space" < 1200
+		#"cargo space" < 1200
 	source
 		attributes "mining" "textiles" "factory" "farming" "fishing" "oil"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
@@ -79,7 +79,7 @@ mission "Hauler - Low Risk - Cargo [3]"
 	cargo random 10 4 .05
 	to offer
 		random < 70
-		"cargo space" < 1500
+		#"cargo space" < 1500
 	source
 		attributes "mining" "textiles" "factory" "farming" "fishing" "oil"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
@@ -101,7 +101,7 @@ mission "Hauler - Low Risk - Cargo [4]"
 	cargo random 10 4 .05
 	to offer
 		random < 60
-		"cargo space" < 1500
+		#"cargo space" < 1500
 	source
 		attributes "mining" "textiles" "factory" "farming" "fishing" "oil"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
@@ -123,7 +123,7 @@ mission "Hauler - Low Risk - Bulk Delivery [0]"
 	cargo random 50 4 .025
 	to offer
 		random < 70
-		"cargo space" < 1500
+		#"cargo space" < 1500
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 	destination
@@ -144,7 +144,7 @@ mission "Hauler - Low Risk - Bulk Delivery [1]"
 	cargo random 50 4 .025
 	to offer
 		random < 60
-		"cargo space" < 1600
+		#"cargo space" < 1600
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 	destination
@@ -165,7 +165,7 @@ mission "Hauler - Low Risk - Bulk Delivery [2]"
 	cargo random 50 4 .025
 	to offer
 		random < 50
-		"cargo space" < 1600
+		#"cargo space" < 1600
 	source
 		attributes "mining" "textiles" "factory" "farming" "fishing" "oil"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
@@ -188,7 +188,7 @@ mission "Hauler - Low Risk - Rush Delivery [0]"
 	cargo random 10 4 .05
 	to offer
 		random < 90
-		"cargo space" < 2200
+		#"cargo space" < 2200
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 	destination
@@ -210,7 +210,7 @@ mission "Hauler - Low Risk - Rush Delivery [1]"
 	cargo random 10 4 .05
 	to offer
 		random < 80
-		"cargo space" < 2400
+		#"cargo space" < 2400
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 	destination
@@ -232,7 +232,7 @@ mission "Hauler - Low Risk - Rush Delivery [2]"
 	cargo random 10 4 .05
 	to offer
 		random < 70
-		"cargo space" < 2800
+		#"cargo space" < 2800
 	source
 		attributes "mining" "textiles" "factory" "farming" "fishing" "oil"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
@@ -255,7 +255,7 @@ mission "Hauler - Low Risk - Rush Delivery [3]"
 	cargo random 10 4 .05
 	to offer
 		random < 60
-		"cargo space" < 3000
+		#"cargo space" < 3000
 	source
 		attributes "mining" "textiles" "factory" "farming" "fishing" "oil"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
@@ -996,7 +996,7 @@ mission "Hauler - Low Risk - Large Bulk Delivery [0]"
 	to offer
 		random < 70
 		"cargo space" > 320
-		"cargo space" < 3000
+		#"cargo space" < 3000
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 	destination
@@ -1018,7 +1018,7 @@ mission "Hauler - Low Risk - Large Bulk Delivery [1]"
 	to offer
 		random < 60
 		"cargo space" > 320
-		"cargo space" < 3000
+		#"cargo space" < 3000
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 	destination
@@ -1040,7 +1040,7 @@ mission "Hauler - Low Risk - Large Bulk Delivery [2]"
 	to offer
 		random < 50
 		"cargo space" > 320
-		"cargo space" < 3000
+		#"cargo space" < 3000
 	source
 		attributes "mining" "textiles" "factory" "farming" "fishing" "oil"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
@@ -1087,7 +1087,7 @@ mission "Hauler - Low Risk - Large Rush Delivery [1]"
 	to offer
 		random < 80
 		"cargo space" > 160
-		"cargo space" < 2400
+		#"cargo space" < 2400
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 	destination
@@ -1110,7 +1110,7 @@ mission "Hauler - Low Risk - Large Rush Delivery [2]"
 	to offer
 		random < 70
 		"cargo space" > 160
-		"cargo space" < 2400
+		#"cargo space" < 2400
 	source
 		attributes "mining" "textiles" "factory" "farming" "fishing" "oil"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
@@ -1134,7 +1134,7 @@ mission "Hauler - Low Risk - Large Rush Delivery [3]"
 	to offer
 		random < 60
 		"cargo space" > 160
-		"cargo space" < 2400
+		#"cargo space" < 2400
 	source
 		attributes "mining" "textiles" "factory" "farming" "fishing" "oil"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
@@ -1156,7 +1156,7 @@ mission "Hauler - Low Risk - Recycle garbage"
 	to offer
 		random < 70
 		"cargo space" > 50
-		"cargo space" < 2000
+		#"cargo space" < 2000
 	cargo "Garbage" 30 250
 	source
 		attributes station
