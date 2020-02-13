@@ -9,7 +9,7 @@
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 mission "Hauler - Low Risk - Cargo [0]"
-	name "Delivery to <planet>"
+	name "Bigger Delivery to <planet>"
 	job
 	repeat
 	description "Deliver <cargo> to <destination>. Payment is <payment>."
@@ -27,7 +27,7 @@ mission "Hauler - Low Risk - Cargo [0]"
 		dialog phrase "generic cargo delivery payment"
 
 mission "Hauler - Low Risk - Cargo [1]"
-	name "Delivery to <planet>"
+	name "Bigger Delivery to <planet>"
 	job
 	repeat
 	description "Deliver <cargo> to <destination>. Payment is <payment>."
@@ -47,7 +47,7 @@ mission "Hauler - Low Risk - Cargo [1]"
 		dialog phrase "generic cargo delivery payment"
 
 mission "Hauler - Low Risk - Cargo [2]"
-	name "Delivery to <planet>"
+	name "Bigger Delivery to <planet>"
 	job
 	repeat
 	description "Deliver <cargo> to <destination>. Payment is <payment>."
@@ -68,7 +68,7 @@ mission "Hauler - Low Risk - Cargo [2]"
 		dialog phrase "generic cargo delivery payment"
 
 mission "Hauler - Low Risk - Cargo [3]"
-	name "Delivery to <planet>"
+	name "Bigger Delivery to <planet>"
 	job
 	repeat
 	description "Deliver <cargo> to <destination>. Payment is <payment>."
@@ -89,7 +89,7 @@ mission "Hauler - Low Risk - Cargo [3]"
 		dialog phrase "generic cargo delivery payment"
 
 mission "Hauler - Low Risk - Cargo [4]"
-	name "Delivery to <planet>"
+	name "Bigger Delivery to <planet>"
 	job
 	repeat
 	description "Deliver <cargo> to <destination>. Payment is <payment>."
@@ -110,7 +110,7 @@ mission "Hauler - Low Risk - Cargo [4]"
 		dialog phrase "generic cargo delivery payment"
 
 mission "Hauler - Low Risk - Bulk Delivery [0]"
-	name "Bulk delivery to <planet>"
+	name "Bigger Bulk delivery to <planet>"
 	job
 	repeat
 	description "Deliver <cargo> to <destination>. Payment is <payment>."
@@ -130,7 +130,7 @@ mission "Hauler - Low Risk - Bulk Delivery [0]"
 		dialog phrase "generic cargo delivery payment"
 
 mission "Hauler - Low Risk - Bulk Delivery [1]"
-	name "Bulk delivery to <planet>"
+	name "Bigger Bulk delivery to <planet>"
 	job
 	repeat
 	description "Deliver <cargo> to <destination>. Payment is <payment>."
@@ -150,7 +150,7 @@ mission "Hauler - Low Risk - Bulk Delivery [1]"
 		dialog phrase "generic cargo delivery payment"
 
 mission "Hauler - Low Risk - Bulk Delivery [2]"
-	name "Bulk delivery to <planet>"
+	name "Bigger Bulk delivery to <planet>"
 	job
 	repeat
 	description "Deliver <cargo> to <destination>. Payment is <payment>."
@@ -171,7 +171,7 @@ mission "Hauler - Low Risk - Bulk Delivery [2]"
 		dialog phrase "generic cargo delivery payment"
 
 mission "Hauler - Low Risk - Rush Delivery [0]"
-	name "Rush delivery to <planet>"
+	name "Bigger Rush delivery to <planet>"
 	job
 	repeat
 	deadline
@@ -192,7 +192,7 @@ mission "Hauler - Low Risk - Rush Delivery [0]"
 		dialog phrase "generic cargo delivery payment"
 
 mission "Hauler - Low Risk - Rush Delivery [1]"
-	name "Rush delivery to <planet>"
+	name "Bigger Rush delivery to <planet>"
 	job
 	repeat
 	deadline
@@ -213,7 +213,7 @@ mission "Hauler - Low Risk - Rush Delivery [1]"
 		dialog phrase "generic cargo delivery payment"
 
 mission "Hauler - Low Risk - Rush Delivery [2]"
-	name "Rush delivery to <planet>"
+	name "Bigger Rush delivery to <planet>"
 	job
 	repeat
 	deadline
@@ -235,7 +235,7 @@ mission "Hauler - Low Risk - Rush Delivery [2]"
 		dialog phrase "generic cargo delivery payment"
 
 mission "Hauler - Low Risk - Rush Delivery [3]"
-	name "Rush delivery to <planet>"
+	name "Bigger Rush delivery to <planet>"
 	job
 	repeat
 	deadline
@@ -941,176 +941,177 @@ mission "Hauler - Low Risk - Rush Delivery [3]"
 		# payment 3000 150
 		# dialog "The released prisoners walk into the spaceport with nothing but discharge paperwork and the clothes on their backs. You collect your payment of <payment>."
 
-# mission "Hauler - Low Risk - Large Bulk Delivery [0]"
-	# name "Large bulk delivery to <planet>"
-	# job
-	# repeat
-	# description "Deliver <cargo> to <destination>. Payment is <payment>."
-	# cargo random 40 2 .02
-	# to offer
-		# random < 70
-		# "cargo space" > 160
-	# source
-		# government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-	# destination
-		# distance 2 8
-		# government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-	# on visit
-		# dialog phrase "generic cargo on visit"
-	# on complete
-		# payment
-		# payment 4000
-		# dialog phrase "generic cargo delivery payment"
+mission "Hauler - Low Risk - Large Bulk Delivery [0]"
+	name "Larger bulk delivery to <planet>"
+	job
+	repeat
+	description "Deliver <cargo> to <destination>. Payment is <payment>."
+	cargo random 80 4 .01
+	to offer
+		random < 70
+		"cargo space" > 320
+	source
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	destination
+		distance 2 8
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		payment 8000
+		dialog phrase "generic cargo delivery payment"
 
-# mission "Hauler - Low Risk - Large Bulk Delivery [1]"
-	# name "Large bulk delivery to <planet>"
-	# job
-	# repeat
-	# description "Deliver <cargo> to <destination>. Payment is <payment>."
-	# cargo random 40 2 .02
-	# to offer
-		# random < 60
-		# "cargo space" > 160
-	# source
-		# government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-	# destination
-		# distance 3 12
-		# government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-	# on visit
-		# dialog phrase "generic cargo on visit"
-	# on complete
-		# payment
-		# payment 6000
-		# dialog phrase "generic cargo delivery payment"
+mission "Hauler - Low Risk - Large Bulk Delivery [1]"
+	name "Larger bulk delivery to <planet>"
+	job
+	repeat
+	description "Deliver <cargo> to <destination>. Payment is <payment>."
+	cargo random 80 4 .01
+	to offer
+		random < 60
+		"cargo space" > 320
+	source
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	destination
+		distance 3 12
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		payment 12000
+		dialog phrase "generic cargo delivery payment"
 
-# mission "Hauler - Low Risk - Large Bulk Delivery [2]"
-	# name "Large bulk delivery to <planet>"
-	# job
-	# repeat
-	# description "Deliver <cargo> to <destination>. Payment is <payment>."
-	# cargo random 40 2 .02
-	# to offer
-		# random < 50
-		# "cargo space" > 160
-	# source
-		# attributes "mining" "textiles" "factory" "farming" "fishing" "oil"
-		# government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-	# destination
-		# distance 4 16
-		# government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-	# on visit
-		# dialog phrase "generic cargo on visit"
-	# on complete
-		# payment
-		# payment 8000
-		# dialog phrase "generic cargo delivery payment"
+mission "Hauler - Low Risk - Large Bulk Delivery [2]"
+	name "Larger bulk delivery to <planet>"
+	job
+	repeat
+	description "Deliver <cargo> to <destination>. Payment is <payment>."
+	cargo random 80 4 .01
+	to offer
+		random < 50
+		"cargo space" > 320
+	source
+		attributes "mining" "textiles" "factory" "farming" "fishing" "oil"
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	destination
+		distance 4 16
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		payment 16000
+		dialog phrase "generic cargo delivery payment"
 
-# mission "Hauler - Low Risk - Large Rush Delivery [0]"
-	# name "Large rush delivery to <planet>"
-	# job
-	# repeat
-	# deadline
-	# description "Deliver <cargo> to <destination> by <date>. Payment is <payment>."
-	# cargo random 20 6 .1
-	# to offer
-		# random < 90
-		# "cargo space" > 80
-	# source
-		# government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-	# destination
-		# distance 4 10
-		# government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-	# on visit
-		# dialog phrase "generic cargo on visit"
-	# on complete
-		# payment
-		# payment 36000
-		# dialog phrase "generic cargo delivery payment"
+mission "Hauler - Low Risk - Large Rush Delivery [0]"
+	name "Larger rush delivery to <planet>"
+	job
+	repeat
+	deadline
+	description "Deliver <cargo> to <destination> by <date>. Payment is <payment>."
+	cargo random 40 12 .05
+	to offer
+		random < 90
+		"cargo space" > 160
+	source
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	destination
+		distance 4 10
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		payment 72000
+		dialog phrase "generic cargo delivery payment"
 
-# mission "Hauler - Low Risk - Large Rush Delivery [1]"
-	# name "Large rush delivery to <planet>"
-	# job
-	# repeat
-	# deadline
-	# description "Deliver <cargo> to <destination> by <date>. Payment is <payment>."
-	# cargo random 20 6 .1
-	# to offer
-		# random < 80
-		# "cargo space" > 80
-	# source
-		# government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-	# destination
-		# distance 5 12
-		# government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-	# on visit
-		# dialog phrase "generic cargo on visit"
-	# on complete
-		# payment
-		# payment 38000
-		# dialog phrase "generic cargo delivery payment"
+mission "Hauler - Low Risk - Large Rush Delivery [1]"
+	name "Larger rush delivery to <planet>"
+	job
+	repeat
+	deadline
+	description "Deliver <cargo> to <destination> by <date>. Payment is <payment>."
+	cargo random 40 12 .05
+	to offer
+		random < 80
+		"cargo space" > 160
+	source
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	destination
+		distance 5 12
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		payment 76000
+		dialog phrase "generic cargo delivery payment"
 
-# mission "Hauler - Low Risk - Large Rush Delivery [2]"
-	# name "Large rush delivery to <planet>"
-	# job
-	# repeat
-	# deadline
-	# description "Deliver <cargo> to <destination> by <date>. Payment is <payment>."
-	# cargo random 20 6 .1
-	# to offer
-		# random < 70
-		# "cargo space" > 80
-	# source
-		# attributes "mining" "textiles" "factory" "farming" "fishing" "oil"
-		# government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-	# destination
-		# distance 6 14
-		# government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-	# on visit
-		# dialog phrase "generic cargo on visit"
-	# on complete
-		# payment
-		# payment 40000
-		# dialog phrase "generic cargo delivery payment"
+mission "Hauler - Low Risk - Large Rush Delivery [2]"
+	name "Larger rush delivery to <planet>"
+	job
+	repeat
+	deadline
+	description "Deliver <cargo> to <destination> by <date>. Payment is <payment>."
+	cargo random 40 12 .05
+	to offer
+		random < 70
+		"cargo space" > 160
+	source
+		attributes "mining" "textiles" "factory" "farming" "fishing" "oil"
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	destination
+		distance 6 14
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		payment 80000
+		dialog phrase "generic cargo delivery payment"
 
-# mission "Hauler - Low Risk - Large Rush Delivery [3]"
-	# name "Large rush delivery to <planet>"
-	# job
-	# repeat
-	# deadline
-	# description "Deliver <cargo> to <destination> by <date>. Payment is <payment>."
-	# cargo random 20 6 .1
-	# to offer
-		# random < 60
-		# "cargo space" > 80
-	# source
-		# attributes "mining" "textiles" "factory" "farming" "fishing" "oil"
-		# government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-	# destination
-		# distance 7 16
-		# government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-	# on visit
-		# dialog phrase "generic cargo on visit"
-	# on complete
-		# payment
-		# payment 42000
-		# dialog phrase "generic cargo delivery payment"
+mission "Hauler - Low Risk - Large Rush Delivery [3]"
+	name "Larger rush delivery to <planet>"
+	job
+	repeat
+	deadline
+	description "Deliver <cargo> to <destination> by <date>. Payment is <payment>."
+	cargo random 40 12 .05
+	to offer
+		random < 60
+		"cargo space" > 160
+	source
+		attributes "mining" "textiles" "factory" "farming" "fishing" "oil"
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	destination
+		distance 7 16
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		payment 84000
+		dialog phrase "generic cargo delivery payment"
 
-# mission "Hauler - Low Risk - Recycle garbage"
-	# name "Recycle garbage"
-	# description "<origin> produces a lot of garbage that needs to be disposed of off-station. Transport <cargo> to the industrial solid waste recycler on <destination>. Payment is <payment>."
-	# job
-	# repeat
-	# to offer
-		# random < 70
-	# cargo "Garbage" 15 100
-	# source
-		# attributes station
-	# destination
-		# attributes "factory" "mining" "dirt belt"
-		# distance 9 12
-	# on visit
-		# dialog phrase "generic cargo on visit"
-	# on complete
-		# dialog "You drop off the <commodity> at an especially smelly solid waste recycler and collect your payment of <payment>."
-		# payment
-		# payment 20000
+mission "Hauler - Low Risk - Recycle garbage"
+	name "Bulk Recycle garbage"
+	description "<origin> produces a whole lot of garbage that needs to be disposed of off-station. Transport <cargo> to the industrial solid waste recycler on <destination>. Payment is <payment>."
+	job
+	repeat
+	to offer
+		random < 70
+		"cargo space" > 50
+	cargo "Garbage" 30 250
+	source
+		attributes station
+	destination
+		attributes "factory" "mining" "dirt belt"
+		distance 9 12
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		dialog "You drop off the <commodity> at an especially smelly solid waste recycler and collect your payment of <payment>."
+		payment
+		payment 40000
