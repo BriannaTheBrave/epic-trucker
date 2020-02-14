@@ -8,13 +8,17 @@ Alright you gear-jamming hyperspace truckers, this message is brought to you by 
 
 Why not go into the big leagues and find yourself some truely EPIC deliveries to fulfill? These special missions come co-sponsored by yours truely, Max Hammer, CEO, of the Mega Truck Co. These enormous, mega, and epic missions are all high-risk - corporations looking to get even, level the competition or even just the biggest and bravest pirates around want to hit these jobs. You aren't just hauling big time, I need you to keep that cargo safe!
 
+-=-=-=-
 Features:
+-=-=-=-
 
 Additional jobs which become unlocked with higher cargo and passenger count. These are copies of the vanilla jobs with a few tweaks to both increase minimums and push the maximum sizes way up - and also their default bonuses. After all, hiring you to do it in one saves them on logistics. There are also more jobs for moving criminals (needs the brig) and more for wealthy patrons (needs luxury) and added one or two fun little but high payout jobs such as a wealthy enthusiast who wants to brag about having gotten a ride with such a legendary captain! (Requires high net-worth)
 
 Right now these extra jobs should come into a vanilla campaign over time as you grow your fleet, either with many haulers or just a couple huge rigs. Most of these jobs are slightly more rare to cut down on job-overload. For now though, once you're an epic trucker you will see nearly 50% more jobs each day.
 
+-=-=-=-
 Installation Instructions: 
+-=-=-=-
 
 Download the ZIP file and extract it into your plugins folder. 
 Alternately, you can just git clone directly into the plugins folder
@@ -22,7 +26,9 @@ Make sure you are only one folder with the name of the mod which directly contai
 
 You'll know it is working if you have over 200 cargo or 6 passengers and you see missions with "Bigger" "Larger" "Many" "A Big Family" in their name
 
+-=-=-=-
 Future:
+-=-=-=-
 
 * Override for existing main jobs to phase them out over time as your cargo + passengers + net worth go up. 
 * Add 3rd tier of mega jobs and have them phase in over time as the big ones also phase out. No one wants to be cluttered with "deliver 5 tons" when you're doing "deliver 2200 tons" and the job system can get overloaded and noisy.
