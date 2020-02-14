@@ -15,7 +15,7 @@ mission "Hauler - Low Risk - Cargo [0]"
 	description "Deliver <cargo> to <destination>. Payment is <payment>."
 	cargo random 10 4 .1
 	to offer
-	"cargo space" > 29
+		"cargo space" > 29
 		#"cargo space" < 1200
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
