@@ -4,9 +4,13 @@ Plugin for Endless Sky https://endless-sky.github.io/
 
 This plug-in adds additional cargo and passanger (and both at once) missions to the game increasing the scale and scope for a player who wants to focus on running a huge trucker shipping delivery passenger service.
 
+-=-=-=-
+Fluff
+-=-=-=-
+
 Alright you gear-jamming hyperspace truckers, this message is brought to you by your good ol' boys at Meganthium Trucking Company, THE Mega Truck Co. Find yourself doing a lot of shopping and price comparison trying to fill up all that cargo space? Maybe you've found gravy town and got yourself a little convoy and to move up to the big leagues? Well we at Mega Truck Co. have you covered. Bigger jobs for a big galaxy. Get your cargo and passenger space up high enough and you'll start getting bigger and larger jobs with more bonus payout. With around fifty billion humans making and taking, it has never been a better time to be a trucker, hauler, ferry, or cabby. 
 
-Why not go into the big leagues and find yourself some truely EPIC deliveries to fulfill? These special missions come co-sponsored by yours truely, Max Hammer, CEO, of the Mega Truck Co. These enormous, mega, and epic missions are all high-risk - corporations looking to get even, level the competition or even just the biggest and bravest pirates around want to hit these jobs. You aren't just hauling big time, I need you to keep that cargo safe!
+Why not go into the big leagues and find yourself some truely EPIC deliveries to fulfill? These special missions come co-sponsored by yours truely, Max Hammer, CEO, Mega Truck Co. These enormous, mega, and epic missions are all high-risk - corporations looking to get even, level the competition or even just the biggest and bravest pirates around want to hit these jobs. You aren't just hauling big time, I need you to keep that cargo safe!
 
 -=-=-=-
 Features:
