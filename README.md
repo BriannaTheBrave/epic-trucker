@@ -20,6 +20,13 @@ Additional jobs which become unlocked with higher cargo and passenger count. The
 
 Right now these extra jobs should come into a vanilla campaign over time as you grow your fleet, either with many haulers or just a couple huge rigs. Most of these jobs are slightly more rare to cut down on job-overload. For now though, once you're an epic trucker you will see nearly 50% more jobs each day.
 
+*Existing Compatible*
+This can be safely added or removed from an existing game. I've tested this myself on Windows and Mint (Linux) only. When adding, you won't see new jobs until you land again (if you're already landed it won't prompt to check for new jobs until you take off). If you remove it, you will keep whatever jobs you have as they're part of your save file -- you will just stop seeing these jobs (again, only once you take off). 
+
+*Mod Compatible*
+This should work with any other mods because this only adds jobs and does not try to tweak existing stuff. 
+Once we add any overrides to phase out vanilla shipping, however, this will become more complicated. This isn't implemented yet.
+
 -=-=-=-
 Installation Instructions: 
 -=-=-=-
@@ -28,7 +35,7 @@ Download the ZIP file and extract it into your plugins folder.
 Alternately, you can just git clone directly into the plugins folder
 Make sure you are only one folder with the name of the mod which directly contains the "data" folder - if you're two levels deep the plugin loader wont find and load the plugin.
 
-You'll know it is working if you have over 200 cargo or 6 passengers and you see missions with "Bigger" "Larger" "Many" "A Big Family" in their name
+You'll know it is working if you have over 200 cargo or 6 passengers and you see missions with "Bigger" "Larger" "Many" "A Big Family" and similar things in their name
 
 -=-=-=-
 Future:
