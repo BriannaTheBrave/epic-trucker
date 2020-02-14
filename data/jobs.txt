@@ -13,8 +13,9 @@ mission "Hauler - Low Risk - Cargo [0]"
 	job
 	repeat
 	description "Deliver <cargo> to <destination>. Payment is <payment>."
-	cargo random 10 4 .05
-	#to offer
+	cargo random 10 4 .1
+	to offer
+	"cargo space" > 29
 		#"cargo space" < 1200
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
@@ -33,9 +34,10 @@ mission "Hauler - Low Risk - Cargo [1]"
 	job
 	repeat
 	description "Deliver <cargo> to <destination>. Payment is <payment>."
-	cargo random 10 4 .05
+	cargo random 10 4 .1
 	to offer
-		random < 90
+		random < 80
+		"cargo space" > 29
 		#"cargo space" < 1200
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
@@ -54,9 +56,10 @@ mission "Hauler - Low Risk - Cargo [2]"
 	job
 	repeat
 	description "Deliver <cargo> to <destination>. Payment is <payment>."
-	cargo random 10 4 .05
+	cargo random 10 4 .1
 	to offer
-		random < 80
+		random < 65
+		"cargo space" > 29
 		#"cargo space" < 1200
 	source
 		attributes "mining" "textiles" "factory" "farming" "fishing" "oil"
@@ -76,9 +79,10 @@ mission "Hauler - Low Risk - Cargo [3]"
 	job
 	repeat
 	description "Deliver <cargo> to <destination>. Payment is <payment>."
-	cargo random 10 4 .05
+	cargo random 10 4 .1
 	to offer
-		random < 70
+		random < 50
+		"cargo space" > 29
 		#"cargo space" < 1500
 	source
 		attributes "mining" "textiles" "factory" "farming" "fishing" "oil"
@@ -98,9 +102,10 @@ mission "Hauler - Low Risk - Cargo [4]"
 	job
 	repeat
 	description "Deliver <cargo> to <destination>. Payment is <payment>."
-	cargo random 10 4 .05
+	cargo random 10 4 .1
 	to offer
-		random < 60
+		random < 40
+		"cargo space" > 29
 		#"cargo space" < 1500
 	source
 		attributes "mining" "textiles" "factory" "farming" "fishing" "oil"
@@ -122,7 +127,8 @@ mission "Hauler - Low Risk - Bulk Delivery [0]"
 	description "Deliver <cargo> to <destination>. Payment is <payment>."
 	cargo random 50 4 .025
 	to offer
-		random < 70
+		random < 50
+		"cargo space" > 99
 		#"cargo space" < 1500
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
@@ -143,7 +149,8 @@ mission "Hauler - Low Risk - Bulk Delivery [1]"
 	description "Deliver <cargo> to <destination>. Payment is <payment>."
 	cargo random 50 4 .025
 	to offer
-		random < 60
+		random < 40
+		"cargo space" > 99
 		#"cargo space" < 1600
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
@@ -164,7 +171,8 @@ mission "Hauler - Low Risk - Bulk Delivery [2]"
 	description "Deliver <cargo> to <destination>. Payment is <payment>."
 	cargo random 50 4 .025
 	to offer
-		random < 50
+		random < 35
+		"cargo space" > 99
 		#"cargo space" < 1600
 	source
 		attributes "mining" "textiles" "factory" "farming" "fishing" "oil"
@@ -187,7 +195,8 @@ mission "Hauler - Low Risk - Rush Delivery [0]"
 	description "Deliver <cargo> to <destination> by <date>. Payment is <payment>."
 	cargo random 10 4 .05
 	to offer
-		random < 90
+		random < 80
+		"cargo space" > 49
 		#"cargo space" < 2200
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
@@ -209,7 +218,8 @@ mission "Hauler - Low Risk - Rush Delivery [1]"
 	description "Deliver <cargo> to <destination> by <date>. Payment is <payment>."
 	cargo random 10 4 .05
 	to offer
-		random < 80
+		random < 65
+		"cargo space" > 49
 		#"cargo space" < 2400
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
@@ -231,7 +241,8 @@ mission "Hauler - Low Risk - Rush Delivery [2]"
 	description "Deliver <cargo> to <destination> by <date>. Payment is <payment>."
 	cargo random 10 4 .05
 	to offer
-		random < 70
+		random < 50
+		"cargo space" > 49
 		#"cargo space" < 2800
 	source
 		attributes "mining" "textiles" "factory" "farming" "fishing" "oil"
@@ -254,7 +265,8 @@ mission "Hauler - Low Risk - Rush Delivery [3]"
 	description "Deliver <cargo> to <destination> by <date>. Payment is <payment>."
 	cargo random 10 4 .05
 	to offer
-		random < 60
+		random < 40
+		"cargo space" > 49
 		#"cargo space" < 3000
 	source
 		attributes "mining" "textiles" "factory" "farming" "fishing" "oil"
@@ -1062,7 +1074,7 @@ mission "Hauler - Low Risk - Large Rush Delivery [0]"
 	description "Deliver <cargo> to <destination> by <date>. Payment is <payment>."
 	cargo random 40 15 .05
 	to offer
-		random < 90
+		random < 70
 		"cargo space" > 160
 		"cargo space" < 2400
 	source
@@ -1085,7 +1097,7 @@ mission "Hauler - Low Risk - Large Rush Delivery [1]"
 	description "Deliver <cargo> to <destination> by <date>. Payment is <payment>."
 	cargo random 40 15 .05
 	to offer
-		random < 80
+		random < 65
 		"cargo space" > 160
 		#"cargo space" < 2400
 	source
@@ -1108,7 +1120,7 @@ mission "Hauler - Low Risk - Large Rush Delivery [2]"
 	description "Deliver <cargo> to <destination> by <date>. Payment is <payment>."
 	cargo random 40 15 .05
 	to offer
-		random < 70
+		random < 50
 		"cargo space" > 160
 		#"cargo space" < 2400
 	source
@@ -1132,7 +1144,7 @@ mission "Hauler - Low Risk - Large Rush Delivery [3]"
 	description "Deliver <cargo> to <destination> by <date>. Payment is <payment>."
 	cargo random 40 15 .05
 	to offer
-		random < 60
+		random < 40
 		"cargo space" > 160
 		#"cargo space" < 2400
 	source
@@ -1154,8 +1166,8 @@ mission "Hauler - Low Risk - Recycle garbage"
 	job
 	repeat
 	to offer
-		random < 70
-		"cargo space" > 50
+		random < 50
+		"cargo space" > 49
 		#"cargo space" < 2000
 	cargo "Garbage" 30 250
 	source
