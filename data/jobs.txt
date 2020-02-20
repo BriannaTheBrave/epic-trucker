@@ -1181,3 +1181,121 @@ mission "Hauler - Low Risk - Recycle garbage"
 		dialog "You drop off the <commodity> at an especially smelly solid waste recycler and collect your payment of <payment>."
 		payment
 		payment 40000
+		
+# Tagalongs
+
+mission "Hauler - Low Risk - Escort (Tiny, Northern, Dangerous Destination)"
+	name "Tagalong to <planet>"
+	description "An inexperienced captain would like to tagalong with you for protection if you're headed their way. The captain of the <npc> is willing to pay you <payment> to reach <destination> by <date> as per their job deadline."
+	repeat
+	job
+	deadline 8
+	to offer
+		random < 20
+		"combat rating" > 10
+	source
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+		attributes "deep" "paradise" "near earth"
+	destination
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+		attributes "frontier" "north"
+		distance 2 4
+	npc
+		government "Pirate"
+		personality nemesis staying harvests plunders
+			confusion 40
+		system destination
+		fleet
+			names "pirate"
+			variant
+				"Sparrow"
+			variant
+				"Fury"
+			variant
+				"Berserker"
+	npc
+		government "Pirate"
+		personality nemesis harvests plunders
+			confusion 40
+		system destination
+		fleet
+			names "pirate"
+			variant
+				"Sparrow"
+			variant
+				"Fury"
+			variant
+				"Berserker"
+	
+	npc accompany save
+		government "Merchant"
+		personality escort timid
+		fleet
+			names "civilian"
+			variant
+				"Shuttle"
+			variant
+				"Star Barge"
+	on complete
+		payment 15000
+		dialog phrase "generic safe escort completion dialog"
+	on visit
+		dialog phrase "generic arrived-without-npc dialog"
+
+mission "Hauler - Low Risk - Escort (Tiny, Northern, Dangerous Origin)"
+	name "Tagalong to <planet>"
+	description "An inexperienced captain would like to tagalong with you for protection if you're headed their way. The captain of the <npc> is willing to pay you <payment> to reach <destination> by <date> as per their job deadline."
+	repeat
+	job
+	deadline 8
+	to offer
+		random < 20
+		"combat rating" > 10
+	source
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+		attributes "frontier" "north"
+	destination
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+		attributes "deep" "paradise" "near earth" "core"
+		distance 2 4
+	npc
+		government "Pirate"
+		personality nemesis harvests plunders
+			confusion 40
+		fleet
+			names "pirate"
+			variant
+				"Sparrow"
+			variant
+				"Fury"
+			variant
+				"Berserker"
+	npc
+		government "Pirate"
+		personality nemesis harvests plunders
+			confusion 40
+		system
+			distance 1
+		fleet
+			names "pirate"
+			variant
+				"Sparrow"
+			variant
+				"Fury"
+			variant
+				"Berserker"
+	
+	npc accompany save
+		government "Merchant"
+		personality escort timid
+		fleet
+			names "civilian"
+			variant
+				"Shuttle"
+			variant
+				"Star Barge"
+	on complete
+		payment 15000
+		dialog phrase "generic safe escort completion dialog"
+	on visit
+		dialog phrase "generic arrived-without-npc dialog"
