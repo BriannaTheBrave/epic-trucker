@@ -1000,7 +1000,7 @@ mission "Hauler - Low Risk - Released Prisoners [2]"
 
 # Bulk and Rush
 mission "Hauler - Low Risk - Large Bulk Delivery [0]"
-	name "Larger bulk delivery to <planet>"
+	name "Huge bulk delivery to <planet>"
 	job
 	repeat
 	description "Deliver <cargo> to <destination>. Payment is <payment>."
@@ -1022,7 +1022,7 @@ mission "Hauler - Low Risk - Large Bulk Delivery [0]"
 		dialog phrase "generic cargo delivery payment"
 
 mission "Hauler - Low Risk - Large Bulk Delivery [1]"
-	name "Larger bulk delivery to <planet>"
+	name "Huge bulk delivery to <planet>"
 	job
 	repeat
 	description "Deliver <cargo> to <destination>. Payment is <payment>."
@@ -1044,7 +1044,7 @@ mission "Hauler - Low Risk - Large Bulk Delivery [1]"
 		dialog phrase "generic cargo delivery payment"
 
 mission "Hauler - Low Risk - Large Bulk Delivery [2]"
-	name "Larger bulk delivery to <planet>"
+	name "Huge bulk delivery to <planet>"
 	job
 	repeat
 	description "Deliver <cargo> to <destination>. Payment is <payment>."
@@ -1067,7 +1067,7 @@ mission "Hauler - Low Risk - Large Bulk Delivery [2]"
 		dialog phrase "generic cargo delivery payment"
 
 mission "Hauler - Low Risk - Large Rush Delivery [0]"
-	name "Larger rush delivery to <planet>"
+	name "Huge rush delivery to <planet>"
 	job
 	repeat
 	deadline
@@ -1090,7 +1090,7 @@ mission "Hauler - Low Risk - Large Rush Delivery [0]"
 		dialog phrase "generic cargo delivery payment"
 
 mission "Hauler - Low Risk - Large Rush Delivery [1]"
-	name "Larger rush delivery to <planet>"
+	name "Huge rush delivery to <planet>"
 	job
 	repeat
 	deadline
@@ -1113,7 +1113,7 @@ mission "Hauler - Low Risk - Large Rush Delivery [1]"
 		dialog phrase "generic cargo delivery payment"
 
 mission "Hauler - Low Risk - Large Rush Delivery [2]"
-	name "Larger rush delivery to <planet>"
+	name "Huge rush delivery to <planet>"
 	job
 	repeat
 	deadline
@@ -1137,7 +1137,7 @@ mission "Hauler - Low Risk - Large Rush Delivery [2]"
 		dialog phrase "generic cargo delivery payment"
 
 mission "Hauler - Low Risk - Large Rush Delivery [3]"
-	name "Larger rush delivery to <planet>"
+	name "Huge rush delivery to <planet>"
 	job
 	repeat
 	deadline
