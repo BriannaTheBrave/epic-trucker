@@ -36,15 +36,8 @@ mission "Hauler - Medium Risk - Passengers [0]"
 		personality nemesis harvests plunders
 			confusion 40
 		system
-			distance 2
-		fleet
-			names "pirate"
-			variant
-				"Sparrow"
-			variant
-				"Fury"
-			variant
-				"Berserker"
+			distance 2 6
+		fleet "pirate raid"
 	on complete
 		payment
 		payment 8000
@@ -73,7 +66,7 @@ mission "Hauler - Medium Risk - Passengers [1]"
 		personality nemesis harvests plunders
 			confusion 40
 		system
-			distance 2
+			distance 2 3
 		fleet
 			names "pirate"
 			variant
@@ -82,6 +75,13 @@ mission "Hauler - Medium Risk - Passengers [1]"
 				"Fury"
 			variant
 				"Berserker"
+	npc
+		government "Pirate"
+		personality nemesis harvests plunders
+			confusion 20
+		system
+			distance 2 6
+		fleet "pirate raid"
 	on complete
 		payment
 		payment 8000
@@ -110,7 +110,21 @@ mission "Hauler - Medium Risk - Passengers [2]"
 		personality nemesis harvests plunders
 			confusion 40
 		system
-			distance 2
+			distance 2 3
+		fleet
+			names "pirate"
+			variant
+				"Sparrow"
+			variant
+				"Fury"
+			variant
+				"Berserker"
+	npc
+		government "Pirate"
+		personality nemesis harvests plunders
+			confusion 40
+		system
+			distance 4 7
 		fleet
 			names "pirate"
 			variant
@@ -124,7 +138,7 @@ mission "Hauler - Medium Risk - Passengers [2]"
 		payment 12000
 		dialog phrase "generic passenger dropoff payment"
 
-# todo needs same escort limiter
+# todo needs same escort limiter for job offer
 mission "Hauler - Medium Risk - Passengers [3]"
 	name "Massive Fleeing Passenger transport to <planet>"
 	job
@@ -147,18 +161,18 @@ mission "Hauler - Medium Risk - Passengers [3]"
 		personality nemesis harvests plunders
 			confusion 40
 		system
-			distance 2
-		fleet
-			names "pirate"
-			variant
-				"Sparrow"
-			variant
-				"Fury"
-			variant
-				"Berserker"
+			distance 2 3
+		fleet "pirate raid"
+	npc
+		government "Pirate"
+		personality nemesis harvests plunders
+			confusion 40
+		system
+			distance 4 7
+		fleet "Marauder fleet I"
 	on complete
 		payment
-		payment 8000
+		payment 10000
 		dialog phrase "generic passenger dropoff payment"
 
 # workers
@@ -185,7 +199,7 @@ mission "Hauler - Medium Risk - Transport miners to <planet>"
 		personality nemesis harvests plunders
 			confusion 40
 		system
-			distance 2
+			distance 2 3
 		fleet
 			names "pirate"
 			variant
@@ -194,6 +208,20 @@ mission "Hauler - Medium Risk - Transport miners to <planet>"
 				"Fury"
 			variant
 				"Berserker"
+	npc
+		government "Pirate"
+		personality nemesis harvests plunders
+			confusion 40
+		system
+			distance 4 6
+		fleet "pirate raid"
+	npc
+		government "Pirate"
+		personality nemesis harvests plunders
+			confusion 40
+		system
+			distance 10 12
+		fleet "Marauder fleet I"
 	on complete
 		payment
 		payment 5000
@@ -222,7 +250,7 @@ mission "Hauler - Medium Risk - Transport farmers to <planet>"
 		personality nemesis harvests plunders
 			confusion 40
 		system
-			distance 2
+			distance 2 3
 		fleet
 			names "pirate"
 			variant
@@ -231,6 +259,20 @@ mission "Hauler - Medium Risk - Transport farmers to <planet>"
 				"Fury"
 			variant
 				"Berserker"
+	npc
+		government "Pirate"
+		personality nemesis harvests plunders
+			confusion 40
+		system
+			distance 4 6
+		fleet "pirate raid"
+	npc
+		government "Pirate"
+		personality nemesis harvests plunders
+			confusion 40
+		system
+			distance 10 12
+		fleet "Marauder fleet I"
 	on complete
 		payment
 		payment 5000
@@ -259,7 +301,7 @@ mission "Hauler - Medium Risk - Transport mill workers to <planet>"
 		personality nemesis harvests plunders
 			confusion 40
 		system
-			distance 2
+			distance 2 3
 		fleet
 			names "pirate"
 			variant
@@ -268,6 +310,20 @@ mission "Hauler - Medium Risk - Transport mill workers to <planet>"
 				"Fury"
 			variant
 				"Berserker"
+	npc
+		government "Pirate"
+		personality nemesis harvests plunders
+			confusion 40
+		system
+			distance 4 6
+		fleet "pirate raid"
+	npc
+		government "Pirate"
+		personality nemesis harvests plunders
+			confusion 40
+		system
+			distance 10 12
+		fleet "Marauder fleet I"
 	on complete
 		payment
 		payment 5000
@@ -296,7 +352,7 @@ mission "Hauler - Medium Risk - Transport workers to <planet>"
 		personality nemesis harvests plunders
 			confusion 40
 		system
-			distance 2
+			distance 2 3
 		fleet
 			names "pirate"
 			variant
@@ -305,6 +361,20 @@ mission "Hauler - Medium Risk - Transport workers to <planet>"
 				"Fury"
 			variant
 				"Berserker"
+	npc
+		government "Pirate"
+		personality nemesis harvests plunders
+			confusion 40
+		system
+			distance 4 6
+		fleet "pirate raid"
+	npc
+		government "Pirate"
+		personality nemesis harvests plunders
+			confusion 40
+		system
+			distance 10 12
+		fleet "Marauder fleet I"
 	on complete
 		payment
 		payment 5000
@@ -319,7 +389,7 @@ mission "Hauler - Medium Risk - Wealthy VIP [0]"
 	passengers 1
 	to offer
 		random < 5
-		"combat rating" > 6
+		"combat rating" > 4
 	on offer
 		require "Luxury Accommodations"
 	source
@@ -336,15 +406,8 @@ mission "Hauler - Medium Risk - Wealthy VIP [0]"
 		personality nemesis harvests plunders
 			confusion 10
 		system
-			distance 5
-		fleet
-			names "pirate"
-			variant
-				"Sparrow"
-			variant
-				"Fury"
-			variant
-				"Berserker"
+			distance 5 10
+		fleet "Bounty Hunters"
 	on complete
 		payment
 		payment 30000
@@ -362,7 +425,7 @@ mission "Hauler - Medium Risk - VIPs [1]"
 	to offer
 		random < 30
 		"passenger space" > 5
-		"combat rating" > 10
+		"combat rating" > 5
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 	destination
@@ -376,15 +439,15 @@ mission "Hauler - Medium Risk - VIPs [1]"
 		personality nemesis harvests plunders
 			confusion 10
 		system
-			distance 5
-		fleet
-			names "pirate"
-			variant
-				"Sparrow"
-			variant
-				"Fury"
-			variant
-				"Berserker"
+			distance 5 8
+		fleet "Bounty Hunters"
+	npc
+		government "Pirate"
+		personality nemesis harvests plunders
+			confusion 20
+		system
+			distance 10 16
+		fleet "Marauder fleet I"
 	on complete
 		payment
 		payment 15000
@@ -416,15 +479,8 @@ mission "Hauler - Medium Risk - Wealthy tourists out"
 		personality nemesis harvests plunders
 			confusion 10
 		system
-			distance 4
-		fleet
-			names "pirate"
-			variant
-				"Sparrow"
-			variant
-				"Fury"
-			variant
-				"Berserker"
+			distance 4 10
+		fleet "Marauder fleet I"
 	on complete
 		payment 20000 200
 		dialog phrase "generic passenger dropoff payment"
@@ -452,7 +508,7 @@ mission "Hauler - Medium Risk - Rich Tourist back [0]"
 		personality nemesis harvests plunders
 			confusion 1
 		system
-			distance 5
+			distance 3 5
 		fleet
 			names "pirate"
 			variant
@@ -461,6 +517,20 @@ mission "Hauler - Medium Risk - Rich Tourist back [0]"
 				"Fury"
 			variant
 				"Berserker"
+	npc
+		government "Pirate"
+		personality nemesis harvests plunders
+			confusion 10
+		system
+			distance 5 8
+		fleet "Bounty Hunters"
+	npc
+		government "Pirate"
+		personality nemesis harvests plunders
+			confusion 20
+		system
+			distance 12 20
+		fleet "Marauder fleet I"
 	on complete
 		payment
 		payment 150000
@@ -476,7 +546,7 @@ mission "Hauler - Medium Risk - Wealthy tourists back"
 	to offer
 		random < 5
 		"passenger space" > 5
-		"combat rating" > 6
+		"combat rating" > 4
 	on offer
 		require "Luxury Accommodations"
 	source
@@ -493,15 +563,15 @@ mission "Hauler - Medium Risk - Wealthy tourists back"
 		personality nemesis harvests plunders
 			confusion 10
 		system
-			distance 5
-		fleet
-			names "pirate"
-			variant
-				"Sparrow"
-			variant
-				"Fury"
-			variant
-				"Berserker"
+			distance 3 6
+		fleet "Marauder fleet I" 2
+	npc
+		government "Pirate"
+		personality nemesis harvests plunders
+			confusion 5
+		system
+			distance 8 16
+		fleet "Marauder fleet II"
 	on complete
 		payment 200000 250
 		dialog phrase "generic passenger dropoff payment"
@@ -517,7 +587,7 @@ mission "Hauler - Medium Risk - Family [0]"
 	to offer
 		random < 10
 		"passenger space" > 10
-		"combat rating" > 6
+		"combat rating" > 4
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 	destination
@@ -530,7 +600,7 @@ mission "Hauler - Medium Risk - Family [0]"
 		personality nemesis harvests plunders
 			confusion 20
 		system
-			distance 4
+			distance 3 6
 		fleet
 			names "pirate"
 			variant
@@ -554,7 +624,7 @@ mission "Hauler - Medium Risk - Strike Breakers [mining]"
 	to offer
 		random < 5
 		"passenger space" > 50
-		"combat rating" > 10
+		"combat rating" > 5
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 	destination
@@ -568,15 +638,15 @@ mission "Hauler - Medium Risk - Strike Breakers [mining]"
 		personality nemesis harvests plunders
 			confusion 0
 		system
-			distance 4
-		fleet
-			names "pirate"
-			variant
-				"Sparrow"
-			variant
-				"Fury"
-			variant
-				"Berserker"
+			distance 3 6
+		fleet "Marauder fleet I" 2
+	npc
+		government "Pirate"
+		personality nemesis harvests plunders
+			confusion 0
+		system
+			distance 8 16
+		fleet "Marauder fleet II"
 	on complete
 		payment
 		payment 30000
@@ -585,13 +655,12 @@ mission "Hauler - Medium Risk - Strike Breakers [mining]"
 #rip-off todo mission chain for a strike breakup
 #todo change start here now current place
 # todo seriously need to look at combat, payment, min-reqs, and when stuff gets offered so we dont give player too many jobs they cannot do
-#todo need to break up my jobs into multple files too
 
 #mission "Hauler - Low Risk - Strike Breakers [textile]"
 	#name "Many Strike breakers to <planet>"
 	#job
 	#repeat
-	description "Bring <bunks> strike breakers to <destination>, to take the place of textile workers who are on strike. #The company will pay you <payment>."
+	#description "Bring <bunks> strike breakers to <destination>, to take the place of textile workers who are on strike. #The company will pay you <payment>."
 	#passengers 5 10 .2
 	#to offer
 		#random < 10
@@ -607,13 +676,13 @@ mission "Hauler - Medium Risk - Strike Breakers [mining]"
 	#on complete
 		#payment
 		#payment 20000
-		dialog "You unload the many strike breakers amid an angry crowd of protesters held back by police. When you return to your ship, you find that the company has transferred the agreed-upon payment of <payment> into your #account."
+		#dialog "You unload the many strike breakers amid an angry crowd of protesters held back by police. When you return to your ship, you find that the company has transferred the agreed-upon payment of <payment> into your #account."
 #
 #mission "Hauler - Low Risk - Strike Breakers [factory]"
 	#name "Many Strike breakers to <planet>"
 	#job
 	#repeat
-	description "Bring <bunks> strike breakers to <destination>, to take the place of factory workers who are on strike. #The company will pay you <payment>."
+	#description "Bring <bunks> strike breakers to <destination>, to take the place of factory workers who are on strike. #The company will pay you <payment>."
 	#passengers 5 10 .2
 	#to offer
 		#random < 10
@@ -629,13 +698,13 @@ mission "Hauler - Medium Risk - Strike Breakers [mining]"
 	#on complete
 		#payment
 		#payment 20000
-		dialog "You unload the many strike breakers amid an angry crowd of protesters held back by police. When you return to your ship, you find that the company has transferred the agreed-upon payment of <payment> into your #account."
+		#dialog "You unload the many strike breakers amid an angry crowd of protesters held back by police. When you return to your ship, you find that the company has transferred the agreed-upon payment of <payment> into your #account."
 #
 #mission "Hauler - Low Risk - Colonists [0]"
 	#name "Many Colonists to <planet>"
 	#job
 	#repeat
-	description "These <bunks> people are hoping to join a colony on <destination>. They will pay you <payment> to take #them there."
+	#description "These <bunks> people are hoping to join a colony on <destination>. They will pay you <payment> to take #them there."
 	#passengers 10 4 .05
 	#to offer
 		#random < 20
@@ -658,7 +727,7 @@ mission "Hauler - Medium Risk - Strike Breakers [mining]"
 	#name "Many Colonists to <planet>"
 	#job
 	#repeat
-	description "These <bunks> people are hoping to join a colony on <destination>. They will pay you <payment> to take #them there."
+	#description "These <bunks> people are hoping to join a colony on <destination>. They will pay you <payment> to take #them there."
 	#passengers 10 4 .05
 	#to offer
 		#random < 12
@@ -682,7 +751,7 @@ mission "Hauler - Medium Risk - Strike Breakers [mining]"
 	#name "Bulk Prisoner transport to <planet>"
 	#job
 	#repeat
-	description "Bring <bunks> petty criminals to <destination>, where they will serve their sentences as mine laborers. #Payment is <payment>."
+	#description "Bring <bunks> petty criminals to <destination>, where they will serve their sentences as mine laborers. #Payment is <payment>."
 	#passengers 2 10 .5
 	#source
 		#government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
@@ -699,13 +768,13 @@ mission "Hauler - Medium Risk - Strike Breakers [mining]"
 		#dialog phrase "generic passenger on visit"
 	#on complete
 		#payment 8000 165
-		dialog "The passengers shuffle unhappily out of the ship under the watchful eye of several well-armed guards as they prepare to repay their debts to society as forced laborers in <planet>'s mines. You collect your payment of <#payment>."
+		#dialog "The passengers shuffle unhappily out of the ship under the watchful eye of several well-armed guards as they prepare to repay their debts to society as forced laborers in <planet>'s mines. You collect your payment of <#payment>."
 #
 #mission "Hauler - Low Risk - Prisoners [1]"
 	#name "Bulk Prisoner transport to <planet>"
 	#job
 	#repeat
-	description "Transport <bunks> petty criminals to <destination>, where they will serve their sentences as factory #laborers. Payment is <payment>."
+	#description "Transport <bunks> petty criminals to <destination>, where they will serve their sentences as factory #laborers. Payment is <payment>."
 	#passengers 2 10 .5
 	#to offer
 		#random < 15
@@ -722,13 +791,13 @@ mission "Hauler - Medium Risk - Strike Breakers [mining]"
 		#dialog phrase "generic passenger on visit"
 	#on complete
 		#payment 8000 165
-		dialog "The passengers shuffle unhappily out of the ship under the watchful eye of several well-armed guards as they prepare to repay their debts to society as forced laborers in <planet>'s factories. You collect your payment #of <payment>."
+		#dialog "The passengers shuffle unhappily out of the ship under the watchful eye of several well-armed guards as they prepare to repay their debts to society as forced laborers in <planet>'s factories. You collect your payment #of <payment>."
 #
 #mission "Hauler - Low Risk - Prisoners [2]"
 	#name "Bulk Prisoner transport to <planet>"
 	#job
 	#repeat
-	description "Transport <bunks> petty criminals to <destination>, where they will serve their sentences as domestic #servants. Payment is <payment>."
+	#description "Transport <bunks> petty criminals to <destination>, where they will serve their sentences as domestic #servants. Payment is <payment>."
 	#passengers 2 10 .5
 	#to offer
 		#random < 15
@@ -744,7 +813,7 @@ mission "Hauler - Medium Risk - Strike Breakers [mining]"
 		#dialog phrase "generic passenger on visit"
 	#on complete
 		#payment 8000 165
-		dialog "The passengers shuffle unhappily out of the ship under the watchful eye of several well-armed guards as they prepare to repay their debts to society as domestic servants for <planet>'s wealthy elite. You collect your #payment of <payment>."
+		#dialog "The passengers shuffle unhappily out of the ship under the watchful eye of several well-armed guards as they prepare to repay their debts to society as domestic servants for <planet>'s wealthy elite. You collect your #payment of <payment>."
 #
 #mission "Hauler - Low Risk - Prisoners [3]"
 	#name "Massive Prisoner transport to <planet>"
@@ -766,7 +835,7 @@ mission "Hauler - Medium Risk - Strike Breakers [mining]"
 		#dialog phrase "generic passenger on visit"
 	#on complete
 		#payment 12000 165
-		dialog "The large group of passengers shuffle unhappily out of the ship under the watchful eye of several well-armed guards as they prepare to repay their debts to society in a penal colony on this remote world. You #collect your payment of <payment>."
+		#dialog "The large group of passengers shuffle unhappily out of the ship under the watchful eye of several well-armed guards as they prepare to repay their debts to society in a penal colony on this remote world. You #collect your payment of <payment>."
 #
 #mission "Hauler - Low Risk - Prisoners [4]"
 	#name "Bulk Dangerous Prisoner transport to <planet>"
@@ -790,7 +859,7 @@ mission "Hauler - Medium Risk - Strike Breakers [mining]"
 		#dialog phrase "generic passenger on visit"
 	#on complete
 		#payment 30000 275
-		dialog "Your shackled passengers offer bitter curses as burly and well-armed guards practically beat them out of your ship, driving them in the direction of a penal colony on this remote world. You collect your payment of <#payment>."
+		#dialog "Your shackled passengers offer bitter curses as burly and well-armed guards practically beat them out of your ship, driving them in the direction of a penal colony on this remote world. You collect your payment of <#payment>."
 	#npc
 		#government "Pirate"
 		#personality nemesis plunders
@@ -819,13 +888,13 @@ mission "Hauler - Medium Risk - Strike Breakers [mining]"
 		#dialog phrase "generic passenger on visit"
 	#on complete
 		#payment 4000 200
-		dialog "The released prisoners walk out into the spaceport with nothing but their meager belongings and discharge #paperwork. You collect your payment of <payment>."
+		#dialog "The released prisoners walk out into the spaceport with nothing but their meager belongings and discharge #paperwork. You collect your payment of <payment>."
 #
 #mission "Hauler - Low Risk - Released Prisoners [1]"
 	#name "Bulk Parolee transport to <planet>"
 	#job
 	#repeat
-	description "Transport <bunks> prisoners home after completing their sentences as domestic servants. Payment is <#payment>."
+	#description "Transport <bunks> prisoners home after completing their sentences as domestic servants. Payment is <#payment>."
 	#passengers 5 20 .5
 	#to offer
 		#"passenger space" > 5
@@ -841,13 +910,13 @@ mission "Hauler - Medium Risk - Strike Breakers [mining]"
 		#dialog phrase "generic passenger on visit"
 	#on complete
 		#payment 4500 200
-		dialog "The released prisoners walk out into the spaceport with nothing but their meager belongings and discharge #paperwork. You collect your payment of <payment>."
+		#dialog "The released prisoners walk out into the spaceport with nothing but their meager belongings and discharge #paperwork. You collect your payment of <payment>."
 #
 #mission "Hauler - Low Risk - Released Prisoners [2]"
 	#name "Bulk Parolee transport to <planet>"
 	#job
 	#repeat
-	description "Transport <bunks> prisoners home after completing their sentences in a penal colony. Payment is <#payment>."
+	#description "Transport <bunks> prisoners home after completing their sentences in a penal colony. Payment is <#payment>."
 	#passengers 5 20 .5
 	#source
 		#government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
@@ -861,7 +930,7 @@ mission "Hauler - Medium Risk - Strike Breakers [mining]"
 		#dialog phrase "generic passenger on visit"
 	#on complete
 		#payment 4500 200
-		dialog "The released prisoners walk into the spaceport with nothing but discharge paperwork and the clothes on #their backs. You collect your payment of <payment>."
+		#dialog "The released prisoners walk into the spaceport with nothing but discharge paperwork and the clothes on #their backs. You collect your payment of <payment>."
 #
 ## Bulk and Rush
 #mission "Hauler - Low Risk - Large Bulk Delivery [0]"
