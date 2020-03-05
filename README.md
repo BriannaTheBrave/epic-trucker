@@ -23,7 +23,7 @@ Additional jobs which become unlocked with higher cargo and passenger count. The
 Right now these extra jobs should come into a vanilla campaign over time as you grow your fleet, either with many haulers or just a couple huge rigs. Most of these jobs are slightly more rare to cut down on job-overload. For now though, once you're an epic trucker you will see nearly 50% more jobs each day.
 
 *Existing Compatible*
-This can be safely added or removed from an existing game. I've tested this myself on Windows and Mint (Linux) only. When adding, you won't see new jobs until you land again (if you're already landed it won't prompt to check for new jobs until you take off). If you remove it, you will keep whatever jobs you have as they're part of your save file -- you will just stop seeing these jobs (again, only once you take off). 
+This can be safely added or removed from an existing game. I've tested this myself on Windows and Ubuntu (Linux) only. When adding, you won't see new jobs until you land again (if you're already landed it won't prompt to check for new jobs until you take off). If you remove it, you will keep whatever jobs you have as they're part of your save file -- you will just stop seeing these jobs (again, only once you take off). 
 
 *Mod Compatible*
 This should work with any other mods because this only adds jobs and does not try to tweak existing stuff. 
