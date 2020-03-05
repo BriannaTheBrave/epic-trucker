@@ -23,7 +23,7 @@ mission "Hauler - Medium Risk - Passengers [0]"
 	to offer
 		random < 40
 		"passenger space" > 10
-		"combat rating" > 6
+		"combat rating" > 100
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 	destination
@@ -53,7 +53,7 @@ mission "Hauler - Medium Risk - Passengers [1]"
 	to offer
 		random < 25
 		"passenger space" > 20
-		"combat rating" > 7
+		"combat rating" > 200
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 	destination
@@ -97,7 +97,7 @@ mission "Hauler - Medium Risk - Passengers [2]"
 	to offer
 		random < 10
 		"passenger space" > 30
-		"combat rating" > 10
+		"combat rating" > 500
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 	destination
@@ -148,7 +148,7 @@ mission "Hauler - Medium Risk - Passengers [3]"
 	to offer
 		random < 5
 		"passenger space" > 20
-		"combat rating" > 7
+		"combat rating" > 700
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 	destination
@@ -185,7 +185,7 @@ mission "Hauler - Medium Risk - Transport miners to <planet>"
 	to offer
 		random < 5
 		"passenger space" > 2
-		"combat rating" > 3
+		"combat rating" > 300
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 	destination
@@ -236,7 +236,7 @@ mission "Hauler - Medium Risk - Transport farmers to <planet>"
 	to offer
 		random < 10
 		"passenger space" > 2
-		"combat rating" > 3
+		"combat rating" > 300
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 	destination
@@ -287,7 +287,7 @@ mission "Hauler - Medium Risk - Transport mill workers to <planet>"
 	to offer
 		random < 5
 		"passenger space" > 2
-		"combat rating" > 3
+		"combat rating" > 300
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 	destination
@@ -338,7 +338,7 @@ mission "Hauler - Medium Risk - Transport workers to <planet>"
 	to offer
 		random < 10
 		"passenger space" > 2
-		"combat rating" > 3
+		"combat rating" > 300
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 	destination
@@ -389,7 +389,7 @@ mission "Hauler - Medium Risk - Wealthy VIP [0]"
 	passengers 1
 	to offer
 		random < 5
-		"combat rating" > 4
+		"combat rating" > 500
 	on offer
 		require "Luxury Accommodations"
 	source
@@ -425,7 +425,7 @@ mission "Hauler - Medium Risk - VIPs [1]"
 	to offer
 		random < 30
 		"passenger space" > 5
-		"combat rating" > 5
+		"combat rating" > 800
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 	destination
@@ -494,7 +494,7 @@ mission "Hauler - Medium Risk - Rich Tourist back [0]"
 	to offer
 		random < 4
 		"net worth" > 10000000
-		"combat rating" > 9
+		"combat rating" > 1000
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 		attributes "tourism"
@@ -546,7 +546,7 @@ mission "Hauler - Medium Risk - Wealthy tourists back"
 	to offer
 		random < 5
 		"passenger space" > 5
-		"combat rating" > 4
+		"combat rating" > 500
 	on offer
 		require "Luxury Accommodations"
 	source
@@ -587,7 +587,7 @@ mission "Hauler - Medium Risk - Family [0]"
 	to offer
 		random < 10
 		"passenger space" > 10
-		"combat rating" > 4
+		"combat rating" > 400
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 	destination
@@ -624,7 +624,7 @@ mission "Hauler - Medium Risk - Strike Breakers [mining]"
 	to offer
 		random < 5
 		"passenger space" > 50
-		"combat rating" > 5
+		"combat rating" > 700
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 	destination

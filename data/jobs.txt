@@ -911,7 +911,7 @@ mission "Hauler - Low Risk - Prisoners [4]"
 	passengers 5 10 .4
 	to offer
 		random < 6
-		"combat rating" > 60
+		"combat rating" > 600
 		"passenger space" > 5
 	on offer
 		require "Brig"
@@ -1192,7 +1192,7 @@ mission "Hauler - Low Risk - Escort (Tiny, Northern, Dangerous Destination)"
 	deadline 8
 	to offer
 		random < 20
-		"combat rating" > 10
+		"combat rating" > 100
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 		attributes "deep" "paradise" "near earth"
@@ -1250,7 +1250,7 @@ mission "Hauler - Low Risk - Escort (Tiny, Northern, Dangerous Origin)"
 	deadline 8
 	to offer
 		random < 10
-		"combat rating" > 10
+		"combat rating" > 100
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 		attributes "frontier" "north"
