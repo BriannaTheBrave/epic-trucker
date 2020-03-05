@@ -13,7 +13,7 @@
 
 # Passengers
 mission "Hauler - Medium Risk - Passengers [0]"
-	name "Escaping Violence - Massive Passenger transport to <planet>"
+	name "Escaping Violence - Large Passenger transport"
 	job
 	repeat
 	description "A large group have pooled resources to travel together. They let you know they have been targetted by pirates. Bring <fare> to <destination>. Payment is <payment>."
@@ -42,7 +42,7 @@ mission "Hauler - Medium Risk - Passengers [0]"
 		dialog phrase "grateful passenger dropoff payment"
 
 mission "Hauler - Medium Risk - Passengers [1]"
-	name "Escaping Violence - Huge refugee transport to <planet>"
+	name "Escaping Violence - Refugee transport"
 	job
 	repeat
 	description "Bring <fare> refugees to <destination>. The forces which displaced them will want to make a statement. Payment is <payment>."
@@ -86,7 +86,7 @@ mission "Hauler - Medium Risk - Passengers [1]"
 
 # needs to have same limiter as escort missions todo
 mission "Hauler - Medium Risk - Passengers [2]"
-	name "Escaping Violence - Mass Refugee transport to <planet>"
+	name "Escaping Violence - Mass Refugee transport"
 	job
 	repeat
 	description "Bring <fare> refugees to <destination>. Pirates will almost certainly try to make a statement by attacking you. Payment is <payment>."
@@ -137,7 +137,7 @@ mission "Hauler - Medium Risk - Passengers [2]"
 
 # todo needs same escort limiter for job offer
 mission "Hauler - Medium Risk - Passengers [3]"
-	name "Escaping Violence - Massive Fleeing Passenger transport to <planet>"
+	name "Escaping Violence - Fleeing Passengers"
 	job
 	repeat
 	description "Bring <fare> to <destination>. They are actively fleeing slavers and need safe transport. Payment is <payment>."

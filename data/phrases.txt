@@ -13,7 +13,7 @@ phrase "grateful passenger dropoff payment"
 	word
 		`Your <passengers> thank you for the safe transportation. You wish them the best of luck on <planet>, and collect your payment of <payment>.`
 		`You say farewell to your grateful <passengers> on <planet>, and collect your payment of <payment>.`
-		`After a genuine thanks from your grateful <passengers> passengers on <planet>, you collect your payment of <payment>.`
+		`After a genuine thanks from your <passengers> grateful passengers on <planet>, you collect your payment of <payment>.`
 		
 phrase "tagalong safe escort completion dialog"
 	word
