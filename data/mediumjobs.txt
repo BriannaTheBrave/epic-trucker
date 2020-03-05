@@ -10,12 +10,10 @@
 
 
 # enormous and mega jobs - all need to upgrade to medium Risk
-# need to upgrade pirate forces across the board
-
 
 # Passengers
 mission "Hauler - Medium Risk - Passengers [0]"
-	name "Massive Passenger transport to <planet>"
+	name "Escaping Violence - Massive Passenger transport to <planet>"
 	job
 	repeat
 	description "A large group have pooled resources to travel together. They let you know they have been targetted by pirates. Bring <fare> to <destination>. Payment is <payment>."
@@ -41,11 +39,10 @@ mission "Hauler - Medium Risk - Passengers [0]"
 	on complete
 		payment
 		payment 8000
-		dialog phrase "generic passenger dropoff payment"
-# replace with grateful passenger dropoff payment
+		dialog phrase "grateful passenger dropoff payment"
 
 mission "Hauler - Medium Risk - Passengers [1]"
-	name "Huge refugee transport to <planet>"
+	name "Escaping Violence - Huge refugee transport to <planet>"
 	job
 	repeat
 	description "Bring <fare> refugees to <destination>. The forces which displaced them will want to make a statement. Payment is <payment>."
@@ -85,7 +82,7 @@ mission "Hauler - Medium Risk - Passengers [1]"
 	on complete
 		payment
 		payment 8000
-		dialog phrase "generic passenger dropoff payment"
+		dialog phrase "grateful passenger dropoff payment"
 
 # needs to have same limiter as escort missions todo
 mission "Hauler - Medium Risk - Passengers [2]"
@@ -136,11 +133,11 @@ mission "Hauler - Medium Risk - Passengers [2]"
 	on complete
 		payment
 		payment 12000
-		dialog phrase "generic passenger dropoff payment"
+		dialog phrase "grateful passenger dropoff payment"
 
 # todo needs same escort limiter for job offer
 mission "Hauler - Medium Risk - Passengers [3]"
-	name "Massive Fleeing Passenger transport to <planet>"
+	name "Escaping Violence - Massive Fleeing Passenger transport to <planet>"
 	job
 	repeat
 	description "Bring <fare> to <destination>. They are actively fleeing slavers and need safe transport. Payment is <payment>."
@@ -173,7 +170,7 @@ mission "Hauler - Medium Risk - Passengers [3]"
 	on complete
 		payment
 		payment 10000
-		dialog phrase "generic passenger dropoff payment"
+		dialog phrase "grateful passenger dropoff payment"
 
 # workers
 mission "Hauler - Medium Risk - Transport miners to <planet>"
@@ -225,7 +222,7 @@ mission "Hauler - Medium Risk - Transport miners to <planet>"
 	on complete
 		payment
 		payment 5000
-		dialog "You wish the mining family the best of luck on <planet>, and collect your payment of <payment>."
+		dialog "You wish the mining family the best of luck on <planet>, and they gratefully fulfill their payment of <payment>."
 
 mission "Hauler - Medium Risk - Transport farmers to <planet>"
 	name "Danger - Farmer transport to <planet>"
@@ -276,7 +273,7 @@ mission "Hauler - Medium Risk - Transport farmers to <planet>"
 	on complete
 		payment
 		payment 5000
-		dialog "You wish the farm family the best of luck on <planet>, and collect your payment of <payment>."
+		dialog "You wish the farm family the best of luck on <planet>, and they gratefully fulfill their payment of <payment>."
 
 mission "Hauler - Medium Risk - Transport mill workers to <planet>"
 	name "Danger - Miller transport to <planet>"
@@ -327,7 +324,7 @@ mission "Hauler - Medium Risk - Transport mill workers to <planet>"
 	on complete
 		payment
 		payment 5000
-		dialog "You wish the workers the best of luck on <planet>, and collect your payment of <payment>."
+		dialog "You wish the workers the best of luck on <planet>, and they gratefully fulfill their payment of <payment>."
 
 mission "Hauler - Medium Risk - Transport workers to <planet>"
 	name "Danger - Worker transport to <planet>"
@@ -378,11 +375,11 @@ mission "Hauler - Medium Risk - Transport workers to <planet>"
 	on complete
 		payment
 		payment 5000
-		dialog "You wish the workers the best of luck on <planet>, and collect your payment of <payment>."
+		dialog "You wish the workers the best of luck on <planet>, and they gratefully fulfill their payment of <payment>."
 
 # vips etc
 mission "Hauler - Medium Risk - Wealthy VIP [0]"
-	name "Bring a wealthy VIP to <planet>"
+	name "Danger - Bring a wealthy VIP to <planet>"
 	job
 	repeat
 	description "This wealthy VIP needs to visit <destination>, and will pay you <payment>. There is credible evidence someone has been hired to abduct the VIP."
@@ -411,8 +408,7 @@ mission "Hauler - Medium Risk - Wealthy VIP [0]"
 	on complete
 		payment
 		payment 30000
-		dialog phrase "generic passenger dropoff payment"
-# todo needs special dialogs for these VIP missions
+		dialog phrase "Capital! The VIP thanks you for the safe transportation. You wish them the best of luck on <planet>, and collect your payment of <payment>."
 
 # todo add a version of the corpoarate and engineer retreat but with risk from sabotage
 
@@ -451,7 +447,7 @@ mission "Hauler - Medium Risk - VIPs [1]"
 	on complete
 		payment
 		payment 15000
-		dialog phrase "generic passenger dropoff payment"
+		dialog phrase "Capital! The <passengers> VIPs thanks you for the safe transportation. You wish them the best of luck on <planet>, and collect your payment of <payment>."
 
 # this is a sneaky job that includes risk unknown to the player and looks like the normal job
 mission "Hauler - Medium Risk - Wealthy tourists out"
@@ -483,10 +479,10 @@ mission "Hauler - Medium Risk - Wealthy tourists out"
 		fleet "Marauder fleet I"
 	on complete
 		payment 20000 200
-		dialog phrase "generic passenger dropoff payment"
+		dialog phrase "grateful passenger dropoff payment"
 
 mission "Hauler - Medium Risk - Rich Tourist back [0]"
-	name "Bring a targetted wealthy tourist home to <planet>"
+	name "Danger - Bring a targetted wealthy tourist home to <planet>"
 	job
 	repeat
 	description "This rich tourist has been attacked while headed home to <destination>. Having barely escaped the last attempt on their life they look for a captain who can get the job done. They will pay you a handsome <payment>."
@@ -534,11 +530,11 @@ mission "Hauler - Medium Risk - Rich Tourist back [0]"
 	on complete
 		payment
 		payment 150000
-		dialog phrase "generic passenger dropoff payment"
-#todo needs a special oh thank the lucky stars for you captain sorta dialog
+		dialog phrase "The wealthy tourist proclaims 'Thank your lucky stars, captain!' and practically leaps for joy. Your payment of <payment> might make you do the same."
 
+#todo should limit this to the fancy resort worlds
 mission "Hauler - Medium Risk - Wealthy tourists back"
-	name "Bring many wealthy tourists home safely to <planet>"
+	name "Danger - Bring many wealthy tourists home safely to <planet>"
 	job
 	repeat
 	description "A star liner was attacked mid-tour and a group of <bunks> terrified tourists will pay top credit for a safe and luxurious trip home to <destination>. They are willing to pay you <payment>."
@@ -574,10 +570,9 @@ mission "Hauler - Medium Risk - Wealthy tourists back"
 		fleet "Marauder fleet II"
 	on complete
 		payment 200000 250
-		dialog phrase "generic passenger dropoff payment"
+		dialog phrase "grateful passenger dropoff payment"
 		
-#todo needs custom phrases
-
+# todo consider removing medium risk family, not interesting clutter		
 mission "Hauler - Medium Risk - Family [0]"
 	name "Transport a big family in danger to <planet>"
 	job
@@ -652,8 +647,8 @@ mission "Hauler - Medium Risk - Strike Breakers [mining]"
 		payment 30000
 		dialog "You unload the huge group of strike breakers amid an angry crowd of protesters held back by police. You think you see some people calmly watching you from the crowd but quickly depart. When you return to your ship, you find that the company has transferred the agreed-upon payment of <payment> into your account."
 
-#rip-off todo mission chain for a strike breakup
-#todo change start here now current place
+# todo rip-off mission chain for a strike breakup where player has to force payment
+# todo change start here now current place
 # todo seriously need to look at combat, payment, min-reqs, and when stuff gets offered so we dont give player too many jobs they cannot do
 
 #mission "Hauler - Low Risk - Strike Breakers [textile]"

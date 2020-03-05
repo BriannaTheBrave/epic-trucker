@@ -15,7 +15,8 @@ mission "Hauler - Low Risk - Cargo [0]"
 	description "Deliver <cargo> to <destination>. Payment is <payment>."
 	cargo random 10 4 .1
 	to offer
-		"cargo space" > 29
+		random < 80
+		"cargo space" > 49
 		#"cargo space" < 1200
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
@@ -36,8 +37,8 @@ mission "Hauler - Low Risk - Cargo [1]"
 	description "Deliver <cargo> to <destination>. Payment is <payment>."
 	cargo random 10 4 .1
 	to offer
-		random < 80
-		"cargo space" > 29
+		random < 65
+		"cargo space" > 49
 		#"cargo space" < 1200
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
@@ -58,8 +59,8 @@ mission "Hauler - Low Risk - Cargo [2]"
 	description "Deliver <cargo> to <destination>. Payment is <payment>."
 	cargo random 10 4 .1
 	to offer
-		random < 65
-		"cargo space" > 29
+		random < 50
+		"cargo space" > 49
 		#"cargo space" < 1200
 	source
 		attributes "mining" "textiles" "factory" "farming" "fishing" "oil"
@@ -81,8 +82,8 @@ mission "Hauler - Low Risk - Cargo [3]"
 	description "Deliver <cargo> to <destination>. Payment is <payment>."
 	cargo random 10 4 .1
 	to offer
-		random < 50
-		"cargo space" > 29
+		random < 35
+		"cargo space" > 49
 		#"cargo space" < 1500
 	source
 		attributes "mining" "textiles" "factory" "farming" "fishing" "oil"
@@ -104,8 +105,8 @@ mission "Hauler - Low Risk - Cargo [4]"
 	description "Deliver <cargo> to <destination>. Payment is <payment>."
 	cargo random 10 4 .1
 	to offer
-		random < 40
-		"cargo space" > 29
+		random < 20
+		"cargo space" > 49
 		#"cargo space" < 1500
 	source
 		attributes "mining" "textiles" "factory" "farming" "fishing" "oil"
@@ -128,7 +129,7 @@ mission "Hauler - Low Risk - Bulk Delivery [0]"
 	cargo random 50 4 .025
 	to offer
 		random < 50
-		"cargo space" > 99
+		"cargo space" > 149
 		#"cargo space" < 1500
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
@@ -150,7 +151,7 @@ mission "Hauler - Low Risk - Bulk Delivery [1]"
 	cargo random 50 4 .025
 	to offer
 		random < 40
-		"cargo space" > 99
+		"cargo space" > 149
 		#"cargo space" < 1600
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
@@ -172,7 +173,7 @@ mission "Hauler - Low Risk - Bulk Delivery [2]"
 	cargo random 50 4 .025
 	to offer
 		random < 35
-		"cargo space" > 99
+		"cargo space" > 149
 		#"cargo space" < 1600
 	source
 		attributes "mining" "textiles" "factory" "farming" "fishing" "oil"
@@ -290,7 +291,8 @@ mission "Hauler - Low Risk - Passengers [0]"
 	description "Bring <fare> to <destination>. Payment is <payment>."
 	passengers 3 20 .6
 	to offer
-		"passenger space" > 3
+		random < 75
+		"passenger space" > 9
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 	destination
@@ -310,8 +312,8 @@ mission "Hauler - Low Risk - Passengers [1]"
 	description "Bring <fare> to <destination>. Payment is <payment>."
 	passengers 3 20 .6
 	to offer
-		random < 75
-		"passenger space" > 3
+		random < 50
+		"passenger space" > 9
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 	destination
@@ -331,8 +333,8 @@ mission "Hauler - Low Risk - Passengers [2]"
 	description "Bring <fare> to <destination>. Payment is <payment>."
 	passengers 4 20 .6
 	to offer
-		random < 50
-		"passenger space" > 3
+		random < 35
+		"passenger space" > 9
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 	destination
@@ -352,8 +354,8 @@ mission "Hauler - Low Risk - Passengers [3]"
 	description "Bring <fare> to <destination>. Payment is <payment>."
 	passengers 4 20 .6
 	to offer
-		random < 25
-		"passenger space" > 3
+		random < 15
+		"passenger space" > 9
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 	destination
@@ -374,7 +376,7 @@ mission "Hauler - Low Risk - Passengers [4]"
 	passengers 4 20 .6
 	to offer
 		random < 50
-		"passenger space" > 3
+		"passenger space" > 9
 	source
 		attributes "urban"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
@@ -510,7 +512,7 @@ mission "Hauler - Low Risk - Tourists out [1]"
 	passengers 6 20 .5
 	to offer
 		random < 30
-		"passenger space" > 5
+		"passenger space" > 19
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 	destination
@@ -532,7 +534,7 @@ mission "Hauler - Low Risk - Wealthy tourists out"
 	passengers 6 20 .6
 	to offer
 		random < 55
-		"passenger space" > 5
+		"passenger space" > 9
 	on offer
 		require "Luxury Accommodations"
 	source
@@ -555,7 +557,7 @@ mission "Hauler - Low Risk - Rich Tourist back [0]"
 	description "This rich tourist is headed home to <destination>, and wants to ride with such a successful captain. They will pay you <payment>."
 	passengers 1
 	to offer
-		random < 8
+		random < 2
 		"net worth" > 10000000
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
@@ -568,7 +570,7 @@ mission "Hauler - Low Risk - Rich Tourist back [0]"
 	on complete
 		payment
 		payment 20000
-		dialog phrase "generic passenger dropoff payment"
+		dialog phrase "Your excited tourist gleefully exclaims their pleasure at having met you and flown with such a well reputed captain! You gleefully accept a payment of <payment>."
 
 mission "Hauler - Low Risk - Tourists back [1]"
 	name "Bring many tourists home to <planet>"
@@ -577,8 +579,8 @@ mission "Hauler - Low Risk - Tourists back [1]"
 	description "These <bunks> tourists are headed home to <destination>. They are willing to pay you <payment>."
 	passengers 5 20 .6
 	to offer
-		random < 30
-		"passenger space" > 4
+		random < 20
+		"passenger space" > 9
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 		attributes "tourism"
@@ -599,7 +601,8 @@ mission "Hauler - Low Risk - Wealthy tourists back"
 	description "These <bunks> wealthy tourists are headed home to <destination>. They are willing to pay you <payment>."
 	passengers 5 20 .65
 	to offer
-		random < 45
+		random < 35
+		"passenger space" > 9
 	on offer
 		require "Luxury Accommodations"
 	source
@@ -623,7 +626,7 @@ mission "Hauler - Low Risk - Family [0]"
 	passengers 6 10 .4
 	to offer
 		random < 30
-		"passenger space" > 10
+		"passenger space" > 12
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 	destination
@@ -644,7 +647,7 @@ mission "Hauler - Low Risk - Family [1]"
 	passengers 6 10 .4
 	to offer
 		random < 25
-		"passenger space" > 10
+		"passenger space" > 12
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 	destination
@@ -664,8 +667,8 @@ mission "Hauler - Low Risk - Family [2]"
 	description "This big family of <bunks> is relocating to <destination>. They will pay you <payment> to take them there."
 	passengers 6 10 .4
 	to offer
-		random < 20
-		"passenger space" > 10
+		random < 15
+		"passenger space" > 12
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 	destination
@@ -685,8 +688,8 @@ mission "Hauler - Low Risk - Family [3]"
 	description "This big family of <bunks> is relocating to <destination>. They will pay you <payment> to take them there."
 	passengers 6 10 .4
 	to offer
-		random < 15
-		"passenger space" > 10
+		random < 10
+		"passenger space" > 12
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 	destination
@@ -773,8 +776,8 @@ mission "Hauler - Low Risk - Colonists [0]"
 	description "These <bunks> people are hoping to join a colony on <destination>. They will pay you <payment> to take them there."
 	passengers 10 4 .05
 	to offer
-		random < 20
-		"passenger space" > 45
+		random < 10
+		"passenger space" > 59
 	source
 		attributes "urban" "near earth" "core" "factory"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
@@ -796,8 +799,8 @@ mission "Hauler - Low Risk - Colonists [1]"
 	description "These <bunks> people are hoping to join a colony on <destination>. They will pay you <payment> to take them there."
 	passengers 10 4 .05
 	to offer
-		random < 12
-		"passenger space" > 45
+		random < 7
+		"passenger space" > 59
 	source
 		attributes "urban" "near earth" "core" "factory"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
@@ -828,6 +831,7 @@ mission "Hauler - Low Risk - Prisoners [0]"
 		attributes "north" "south" "rim" "frontier" "core"
 	to offer
 		random < 15
+		"passenger space" > 9
 	on offer
 		require "Brig"
 	on visit
@@ -844,6 +848,7 @@ mission "Hauler - Low Risk - Prisoners [1]"
 	passengers 2 10 .5
 	to offer
 		random < 15
+		"passenger space" > 9
 	on offer
 		require "Brig"
 	source
@@ -867,6 +872,7 @@ mission "Hauler - Low Risk - Prisoners [2]"
 	passengers 2 10 .5
 	to offer
 		random < 15
+		"passenger space" > 9
 	on offer
 		require "Brig"
 	source
@@ -889,6 +895,7 @@ mission "Hauler - Low Risk - Prisoners [3]"
 	passengers 15 15 .3
 	to offer
 		random < 10
+		"passenger space" > 9
 	on offer
 		require "Brig"
 	source
@@ -904,15 +911,15 @@ mission "Hauler - Low Risk - Prisoners [3]"
 		dialog "The large group of passengers shuffle unhappily out of the ship under the watchful eye of several well-armed guards as they prepare to repay their debts to society in a penal colony on this remote world. You collect your payment of <payment>."
 
 mission "Hauler - Low Risk - Prisoners [4]"
-	name "Bulk Dangerous Prisoner transport to <planet>"
+	name "Danger Bulk Dangerous Prisoner transport to <planet>"
 	job
 	repeat
-	description "Transport <bunks> violent felons to a penal colony on <destination>. Payment is <payment>."
+	description "Transport <bunks> violent felons to a penal colony on <destination>. Reports indicate a fleet may try to free the prisoners. Payment is <payment>."
 	passengers 5 10 .4
 	to offer
 		random < 6
 		"combat rating" > 600
-		"passenger space" > 5
+		"passenger space" > 12
 	on offer
 		require "Brig"
 	source
@@ -940,7 +947,8 @@ mission "Hauler - Low Risk - Released Prisoners [0]"
 	description "Transport <bunks> prisoners home after completing their sentences of hard labor. Payment is <payment>."
 	passengers 5 20 .5
 	to offer
-		"passenger space" > 5
+		"passenger space" > 19
+		random < 10
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 		attributes "mining" "factory"
@@ -948,8 +956,6 @@ mission "Hauler - Low Risk - Released Prisoners [0]"
 	destination
 		distance 2 10
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-	to offer
-		random < 10
 	on visit
 		dialog phrase "generic passenger on visit"
 	on complete
@@ -963,15 +969,14 @@ mission "Hauler - Low Risk - Released Prisoners [1]"
 	description "Transport <bunks> prisoners home after completing their sentences as domestic servants. Payment is <payment>."
 	passengers 5 20 .5
 	to offer
-		"passenger space" > 5
+		"passenger space" > 19
+		random < 10
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 		attributes "paradise"
 	destination
 		distance 2 10
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-	to offer
-		random < 10
 	on visit
 		dialog phrase "generic passenger on visit"
 	on complete
@@ -992,6 +997,7 @@ mission "Hauler - Low Risk - Released Prisoners [2]"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 	to offer
 		random < 10
+		"passenger space" > 19
 	on visit
 		dialog phrase "generic passenger on visit"
 	on complete
@@ -1006,8 +1012,8 @@ mission "Hauler - Low Risk - Large Bulk Delivery [0]"
 	description "Deliver <cargo> to <destination>. Payment is <payment>."
 	cargo random 80 10 .01
 	to offer
-		random < 70
-		"cargo space" > 320
+		random < 50
+		"cargo space" > 700
 		#"cargo space" < 3000
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
@@ -1028,8 +1034,8 @@ mission "Hauler - Low Risk - Large Bulk Delivery [1]"
 	description "Deliver <cargo> to <destination>. Payment is <payment>."
 	cargo random 80 10 .01
 	to offer
-		random < 60
-		"cargo space" > 320
+		random < 40
+		"cargo space" > 700
 		#"cargo space" < 3000
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
@@ -1050,8 +1056,8 @@ mission "Hauler - Low Risk - Large Bulk Delivery [2]"
 	description "Deliver <cargo> to <destination>. Payment is <payment>."
 	cargo random 80 10 .01
 	to offer
-		random < 50
-		"cargo space" > 320
+		random < 30
+		"cargo space" > 700
 		#"cargo space" < 3000
 	source
 		attributes "mining" "textiles" "factory" "farming" "fishing" "oil"
@@ -1074,9 +1080,9 @@ mission "Hauler - Low Risk - Large Rush Delivery [0]"
 	description "Deliver <cargo> to <destination> by <date>. Payment is <payment>."
 	cargo random 40 15 .05
 	to offer
-		random < 70
-		"cargo space" > 160
-		"cargo space" < 2400
+		random < 65
+		"cargo space" > 200
+		#"cargo space" < 2400
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 	destination
@@ -1097,8 +1103,8 @@ mission "Hauler - Low Risk - Large Rush Delivery [1]"
 	description "Deliver <cargo> to <destination> by <date>. Payment is <payment>."
 	cargo random 40 15 .05
 	to offer
-		random < 65
-		"cargo space" > 160
+		random < 50
+		"cargo space" > 200
 		#"cargo space" < 2400
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
@@ -1120,8 +1126,8 @@ mission "Hauler - Low Risk - Large Rush Delivery [2]"
 	description "Deliver <cargo> to <destination> by <date>. Payment is <payment>."
 	cargo random 40 15 .05
 	to offer
-		random < 50
-		"cargo space" > 160
+		random < 35
+		"cargo space" > 200
 		#"cargo space" < 2400
 	source
 		attributes "mining" "textiles" "factory" "farming" "fishing" "oil"
@@ -1144,8 +1150,8 @@ mission "Hauler - Low Risk - Large Rush Delivery [3]"
 	description "Deliver <cargo> to <destination> by <date>. Payment is <payment>."
 	cargo random 40 15 .05
 	to offer
-		random < 40
-		"cargo space" > 160
+		random < 15
+		"cargo space" > 200
 		#"cargo space" < 2400
 	source
 		attributes "mining" "textiles" "factory" "farming" "fishing" "oil"
@@ -1166,10 +1172,10 @@ mission "Hauler - Low Risk - Recycle garbage"
 	job
 	repeat
 	to offer
-		random < 50
-		"cargo space" > 49
+		random < 40
+		"cargo space" > 199
 		#"cargo space" < 2000
-	cargo "Garbage" 30 250
+	cargo "Garbage" 250 30 .13
 	source
 		attributes station
 	destination
@@ -1192,7 +1198,7 @@ mission "Hauler - Low Risk - Escort (Tiny, Northern, Dangerous Destination)"
 	deadline 8
 	to offer
 		random < 20
-		"combat rating" > 100
+		"combat rating" > 250
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 		attributes "deep" "paradise" "near earth"
@@ -1238,7 +1244,7 @@ mission "Hauler - Low Risk - Escort (Tiny, Northern, Dangerous Destination)"
 				"Star Barge"
 	on complete
 		payment 15000
-		dialog phrase "generic safe escort completion dialog"
+		dialog phrase "tagalong safe escort completion dialog"
 	on visit
 		dialog phrase "generic arrived-without-npc dialog"
 
@@ -1250,7 +1256,7 @@ mission "Hauler - Low Risk - Escort (Tiny, Northern, Dangerous Origin)"
 	deadline 8
 	to offer
 		random < 10
-		"combat rating" > 100
+		"combat rating" > 250
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 		attributes "frontier" "north"
@@ -1296,6 +1302,6 @@ mission "Hauler - Low Risk - Escort (Tiny, Northern, Dangerous Origin)"
 				"Star Barge"
 	on complete
 		payment 15000
-		dialog phrase "generic safe escort completion dialog"
+		dialog phrase "tagalong safe escort completion dialog"
 	on visit
 		dialog phrase "generic arrived-without-npc dialog"
