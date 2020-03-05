@@ -2,7 +2,7 @@
 
 Plugin for Endless Sky https://endless-sky.github.io/
 
-This plug-in adds additional cargo and passanger (and both at once) missions to the game increasing the scale and scope for a player who wants to focus on running a huge trucker shipping delivery passenger service.
+This plug-in adds additional cargo and passenger (and both at once) missions to the game increasing the scale and scope for a player who wants to focus on running a huge trucker shipping delivery passenger service.
 
 Please check "Releases" for functional releases - whatever is currently in source may be a work in progress. I release code when it is in a stable, tested state so check there!
 
