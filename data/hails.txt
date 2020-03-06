@@ -11,11 +11,13 @@
 
 phrase "friendly civilian"
 	word
-		"You ever heard of Meganthium? "
-		"You hear about Mega Truck Co? "
-		"They been talking about them MEGA folks... "
-		"Hearing a lot of chatter about Mega Truck Co"
-		"Yesterday someone mentioned Meganthium Trucking Company. "
+		"You ever heard of Meganthium?"
+		"You hear about Mega Truck Co?"
+		"They been talking about them MEGA folks..."
+		"Hearing a lot of chatter about Mega Truck Co."
+		"Yesterday someone mentioned Meganthium Trucking Company."
+	word
+		" "
 	word
 		"Some big league shipping company or whatever."
 		"Buncha thugs organized behind a shipping union!"
@@ -31,15 +33,17 @@ phrase "friendly civilian"
 		
 phrase "friendly civilian"
 	word
-		"Those MEGA Truck guys "
-		"Meganthium "
-		"A captain flying for MEGA "
-		"One of Mega Truck Co's fleets "
-		"Some escort pilot with Meganthium "
-		"Mega Truck Co "
-		"THE Mega Truck Co "
-		"Some hot-shot haulers "
-		"A fleet of real Southern merchants "
+		"Those MEGA Truck guys"
+		"Meganthium"
+		"A captain flying for MEGA"
+		"One of Mega Truck Co's fleets"
+		"Some escort pilot with Meganthium"
+		"Mega Truck Co"
+		"THE Mega Truck Co"
+		"Some hot-shot haulers"
+		"A fleet of real Southern merchants"
+	word
+		" "
 	word
 		"saved me from pirates last night!"
 		"hauled two-hundred-thousand tons of cargo to Luna! Can you believe that?"
