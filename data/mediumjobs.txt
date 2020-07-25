@@ -408,7 +408,7 @@ mission "Hauler - Medium Risk - Wealthy VIP [0]"
 	on complete
 		payment
 		payment 30000
-		dialog phrase "Capital! The VIP thanks you for the safe transportation. You wish them the best of luck on <planet>, and collect your payment of <payment>."
+		dialog "Capital! The VIP thanks you for the safe transportation. You wish them the best of luck on <planet>, and collect your payment of <payment>."
 
 # todo add a version of the corpoarate and engineer retreat but with risk from sabotage
 
@@ -447,7 +447,7 @@ mission "Hauler - Medium Risk - VIPs [1]"
 	on complete
 		payment
 		payment 15000
-		dialog phrase "Capital! The <passengers> VIPs thanks you for the safe transportation. You wish them the best of luck on <planet>, and collect your payment of <payment>."
+		dialog "Capital! The <passengers> VIPs thanks you for the safe transportation. You wish them the best of luck on <planet>, and collect your payment of <payment>."
 
 # this is a sneaky job that includes risk unknown to the player and looks like the normal job
 mission "Hauler - Medium Risk - Wealthy tourists out"
@@ -530,7 +530,7 @@ mission "Hauler - Medium Risk - Rich Tourist back [0]"
 	on complete
 		payment
 		payment 150000
-		dialog phrase "The wealthy tourist proclaims 'Thank your lucky stars, captain!' and practically leaps for joy. Your payment of <payment> might make you do the same."
+		dialog "The wealthy tourist proclaims 'Thank your lucky stars, captain!' and practically leaps for joy. Your payment of <payment> might make you do the same."
 
 #todo should limit this to the fancy resort worlds
 mission "Hauler - Medium Risk - Wealthy tourists back"

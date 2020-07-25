@@ -570,7 +570,7 @@ mission "Hauler - Low Risk - Rich Tourist back [0]"
 	on complete
 		payment
 		payment 20000
-		dialog phrase "Your excited tourist gleefully exclaims their pleasure at having met you and flown with such a well reputed captain! You gleefully accept a payment of <payment>."
+		dialog "Your excited tourist gleefully exclaims their pleasure at having met you and flown with such a well reputed captain! You gleefully accept a payment of <payment>."
 
 mission "Hauler - Low Risk - Tourists back [1]"
 	name "Bring many tourists home to <planet>"
